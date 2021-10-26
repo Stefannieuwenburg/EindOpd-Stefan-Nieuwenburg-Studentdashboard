@@ -1,13 +1,189 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    font-family: "Quicksand";
+    color: #333;
+  }
+
+.navigation ul {
+    list-style-type: none;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dddddd;
+    border-radius: 25px;
+    border: 3px solid #000000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: #6a6868;
+}
+
+.OverviewPage {
+    font-family: "Quicksand", sans-serif;
+    padding: 5px;
+}
+
+.OverviewPage h1 {
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.ChartComponent {
+    margin-bottom: 5px;
+    margin: 50px;
+    justify-content: center;
+   
+}
+
+.InputSelect {
+    padding: 15px;
+    background-color: #dddddd;
+    border-radius: 0px 0px 5px 0px;
+    width: 35%;
+    border-radius: 25px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.InputSelectLabel {
+    margin-right: 5px;
+}
+
+.SelectStudents {
+    font-family: "Quicksand", sans-serif;
+    padding: 10px;
+    background-color: #dddddd;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 50px;
+    border-radius: 25px;
+    
+}
+
+.SelectStudents p {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.StudentsPage {
+    font-family: "Quicksand", sans-serif;
+    padding: 15px;
+}
+
+.StudentsPage h1 {
+    font-family: "Quicksand", sans-serif;
+    text-align: left;
+    padding-left: 50px;
+    margin-top: 0;
+}
+
+.StudentsPage :hover{
+    color: #002d7a;
+    
+}
+
+.StudentsPageList ul {
+    list-style: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+   
+}
+
+.StudentsPageList li {
+    display: inline-block;
+    background-color: #dddddd;
+    width: 20%;
+    padding: 10px;
+    margin: 2px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+.StudentsPageList li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.StudentPage {
+    font-family: "Quicksand", sans-serif;
+    padding: 15px;
+}
+
+.StudentPage h1 {
+    font-family: "Quicksand", sans-serif;
+    text-align: left;
+    padding-left: 50px;
+    margin-top: 0;
+}
+
+.GraphComponent {
+    margin-bottom: 20px;
+    
+    margin: 50px;
+    justify-content: center;
+}
+
+.ComponentInfo {
+    padding: 15px;
+    background-color:  #dddddd;
+    border-radius: 25px;
+    border: 3px solid #000000;
+}
+
+.ComponentInfo p {
+    margin: 0;
+}
+
+.ComponentInfo .fun::before {
+    content: "";
+    display: inline-block;
+    background-color: #11406f;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.ComponentInfo .difficult::before {
+    content: "";
+    display: inline-block;
+    background-color: #070707;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.ComponentInfo .averageAll::before {
+    content: "";
+    display: inline-block;
+    background-color:#c43a31;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.ComponentInfo .averageOneStudent::before {
+    content: "";
+    display: inline-block;
+    background-color:#ff00ff;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
 }
